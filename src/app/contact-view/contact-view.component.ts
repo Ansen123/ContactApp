@@ -14,12 +14,12 @@ export class ContactViewComponent implements OnInit {
    fetchData=()=>{
     this.myapi.viewContact().subscribe(
       (data)=>{
-        this.contact=data
+        this.contactData=data
       }
     )
    }
 
-   contact:any={}
+   contactData:any={}
   ngOnInit(): void {
   }
 
