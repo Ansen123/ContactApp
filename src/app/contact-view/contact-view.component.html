@@ -4,21 +4,33 @@
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
 
-<div class="row g-3">
-    <div *ngFor=" let i  of contactData.sta class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-4 col-xxl-4>
-        <div class="card" >
-            <div class="card-body">
-              <p class="card-text">{{i.name}}</p>
-              <p class="card-text">{{i.email}}</p>
-              <p class="card-text">{{i.vat}}</p>
-              <p class="card-text">{{i.phone}}</p>
-              <p class="card-text">{{i.country}}</p>
-            
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+                <div class="row g-3">
+                    <div *ngFor=" let i  of contactData.data" class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-4 col-xxl-4">
+                <div class="card" >
+                    <img height=350px src="{{i.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{i.name}}</h5>
+                      <p class="card-text">{{i.email}}</p>
+                      <p class="card-text">{{i.vat}}</p>
+                      <p class="card-text">{{i.phone}}</p>
+                      <p class="card-text">{{i.country}}</p>
+                      <p class="card-text">{{i.address}}</p>
+                      <p class="card-text">{{i.streetName}}</p>
+                   
+                      <a href="#" class="btn btn-primary">View More Details</a>
+                    </div>
+                  </div>
+
+                </div>
             </div>
-          </div>
-    </div>
-    
+
+
+
+
+                
     
    
 </div>
